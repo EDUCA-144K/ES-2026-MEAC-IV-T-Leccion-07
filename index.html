@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lección 7 – ¡Escuchen esto! | Guía MEAC Interactiva</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f7f9; padding:20px; position:relative }
+    h1 { text-align:center; color:#2c3e50 }
+    .versiculo { background:#fff; border-left:5px solid #34495e; padding:15px; margin-bottom:20px; font-style:italic }
+    .boton, .sub-boton, .volver { display:flex; align-items:center; gap:10px; width:100%; padding:15px; margin:10px 0; font-size:16px; background:#3498db; color:#fff; border:none; border-radius:8px; cursor:pointer; text-align:left }
+    .sub-boton{ background:#27ae60 }
+    .volver{ background:#7f8c8d }
+    .boton:hover, .sub-boton:hover, .volver:hover{ opacity:.9 }
+    .contenido, .sub-contenido{ display:none; padding:15px; background:#fff; border:2px solid #2980b9; border-radius:8px; margin-bottom:20px }
+    .color-dot{ width:14px; height:14px; border-radius:50%; display:inline-block }
+    .dot-yellow{ background:yellow }
+    .dot-blue{ background:navy }
+    .dot-green{ background:green }
+    .dot-red{ background:red }
+    ul{ margin-top:10px }
+    .marca{ position:fixed; bottom:10px; right:20px; color:#888; font-weight:bold }
+    .ejemplo{ color:#555; font-style:italic; margin-top:8px }
+    .desarrollo{ margin-top:6px; color:#333; font-size:14px }
+    .nota{ font-size:13px; color:#555; margin-top:8px }
+  </style>
+</head>
+<body>
+  <h1>Lección 7: ¡Escuchen esto! – Guía Interactiva MEAC</h1>
+
+  <div class="versiculo">
+    «Estas cosas les sucedieron por ejemplo, y fueron escritas para advertirnos a nosotros, a los que han llegado al fin del tiempo»<br/>
+    <strong>1 Corintios 10:11</strong>
+  </div>
+
+  <div id="inicio">
+    <button class="boton" onclick="mostrarSeccion('motiva')"><span class="color-dot dot-yellow"></span> MOTIVA – Mueve el corazón</button>
+    <button class="boton" onclick="mostrarSeccion('explora')"><span class="color-dot dot-blue"></span> EXPLORA – Escudriña la Palabra</button>
+    <button class="boton" onclick="mostrarSeccion('aplica')"><span class="color-dot dot-green"></span> APLICA – Analiza tu comunión con Dios</button>
+    <button class="boton" onclick="mostrarSeccion('crea')"><span class="color-dot dot-red"></span> CREA – Comparte y testifica</button>
+  </div>
+
+  <div id="motiva" class="contenido">
+    <button class="sub-boton" onclick="mostrarDetalle('motiva1')">❓ Pregunta inicial</button>
+    <button class="sub-boton" onclick="mostrarDetalle('motiva2')">🤝 Actividad grupal</button>
+    <button class="volver" onclick="volverInicio()">⬅️ Volver</button>
+  </div>
+
+  <div id="motiva1" class="sub-contenido">
+    <p><strong>Pregunta:</strong> Cuando una enseñanza bíblica confronta una costumbre, decisión o idea que aprecias mucho, ¿qué te resulta más difícil: escucharla con humildad, aceptar que podrías estar equivocado, cambiar tu conducta o evitar enojarte con quien te muestra la verdad? ¿Por qué?</p>
+    <p class="ejemplo">Ejemplo 1: “A veces es difícil aceptar una corrección porque sentimos que están atacando nuestra forma de pensar, aunque en realidad Dios quiera ayudarnos”.</p>
+    <p class="ejemplo">Ejemplo 2: “Me cuesta cambiar una conducta cuando ya se ha convertido en costumbre, pero la Palabra de Dios debe estar por encima de mis preferencias”.</p>
+  </div>
+
+  <div id="motiva2" class="sub-contenido">
+    <p><strong>Dinámica:</strong> El maestro invita a cada persona completar una frase breve: “Escuchar a Dios significa…” o “Una advertencia bíblica puede salvarme cuando…”. Cada participante responde desde su asiento, sin dividir el grupo y usando únicamente su Biblia o el folleto de estudio.</p>
+    <p class="ejemplo">Ejemplo 1: “Escuchar a Dios significa estar dispuesto a obedecer aunque el mensaje no sea cómodo”.</p>
+    <p class="ejemplo">Ejemplo 2: “Una advertencia bíblica puede salvarme cuando me ayuda a reconocer un error antes de que produzca consecuencias mayores”.</p>
+  </div>
+
+  <div id="explora" class="contenido">
+    <button class="sub-boton" onclick="mostrarDetalle('explora1')">📖 Textos clave</button>
+    <button class="sub-boton" onclick="mostrarDetalle('explora2')">💬 Preguntas de estudio</button>
+    <button class="volver" onclick="volverInicio()">⬅️ Volver</button>
+  </div>
+
+  <div id="explora1" class="sub-contenido">
+    <p>
+      Números 13:26-30<br/>
+      <span class="desarrollo">Los espías describieron los desafíos de Canaán, pero Caleb llamó al pueblo a avanzar confiando en la promesa de Dios. El problema no era la existencia de dificultades reales, sino permitir que el temor fuera más fuerte que la confianza en el Señor.</span><br/>
+
+      Números 14:4-11<br/>
+      <span class="desarrollo">El temor se convirtió en rebelión. El pueblo quiso reemplazar a Moisés y Aarón porque rechazaba el mensaje que los invitaba a confiar en Dios. La ira contra los mensajeros revelaba, en realidad, una falta de fe en Dios mismo.</span><br/>
+
+      Jeremías 36:20-26<br/>
+      <span class="desarrollo">El rey Joacim escuchó la lectura del rollo de Jeremías y respondió cortándolo y quemándolo. Intentó destruir físicamente el mensaje, pero no pudo borrar la palabra ni la voluntad de Dios.</span><br/>
+
+      Jeremías 36:27-31<br/>
+      <span class="desarrollo">Después de que el rollo fue destruido, Dios ordenó que el mensaje fuera escrito nuevamente y añadió una advertencia contra Joacim. Rechazar la Palabra no elimina sus consecuencias; la rebeldía solo agrava el daño.</span><br/>
+
+      2 Crónicas 36:15-16<br/>
+      <span class="desarrollo">Dios envió repetidamente mensajeros porque tenía compasión de su pueblo, pero ellos se burlaron de los profetas y despreciaron sus palabras. La persistencia de Dios muestra que las advertencias proféticas son una expresión de su misericordia.</span><br/>
+
+      Mateo 23:30-35<br/>
+      <span class="desarrollo">Jesús denunció la hipocresía de quienes honraban las tumbas de los profetas del pasado mientras rechazaban el mensaje de Dios en el presente. Se puede admirar a antiguos mensajeros y, al mismo tiempo, repetir el mismo espíritu de rechazo.</span><br/>
+
+      Mateo 7:5<br/>
+      <span class="desarrollo">Jesús llama a examinar primero nuestra propia vida. La verdadera respuesta a la voz profética comienza con humildad y arrepentimiento personal, no con una mirada crítica dirigida únicamente a los demás.</span><br/>
+
+      1 Corintios 10:6-12<br/>
+      <span class="desarrollo">Pablo explica que las experiencias de Israel fueron registradas como ejemplos y advertencias para nosotros. La historia bíblica permite reconocer patrones de incredulidad, idolatría y rebelión para no repetirlos.</span><br/>
+
+      2 Crónicas 20:20<br/>
+      <span class="desarrollo">Josafat llamó al pueblo a creer en Dios y prestar atención a sus profetas. La verdadera prosperidad espiritual está relacionada con confiar en la orientación que Dios ofrece por medio de su Palabra.</span><br/>
+
+      Isaías 40:8<br/>
+      <span class="desarrollo">La Palabra de Dios permanece para siempre. Las generaciones cambian, pero los principios y advertencias divinas conservan su poder y relevancia para quienes viven en el tiempo del fin.</span><br/>
+
+      3 Juan 1:2<br/>
+      <span class="desarrollo">La prosperidad que Dios desea incluye el bienestar espiritual. Más que medir la bendición por bienes materiales, la lección invita a buscar una vida que prospere en fe, obediencia y comunión con Dios.</span>
+    </p>
+
+    <p class="nota"><strong>Resumen de la lección:</strong> El mensaje central de esta semana es que <strong>Dios nos habla para salvarnos, pero escuchar su voz exige humildad, fe y disposición a cambiar</strong>. En Números 13:26-30 y 14:4-11, Israel permitió que el miedo a los gigantes eclipsara la promesa divina. Aunque Caleb llamó al pueblo a confiar en Dios, el temor se transformó en ira contra Moisés y Aarón y finalmente en rebelión contra el Señor. Jeremías 36:20-31 muestra otra forma de rechazo: el rey Joacim cortó y quemó el rollo profético creyendo que así podía deshacerse del mensaje, pero Dios ordenó escribirlo nuevamente. La lección recuerda que destruir, ignorar o desacreditar al mensajero no elimina la verdad ni sus consecuencias. 2 Crónicas 36:15-16 revela que Dios envió repetidamente a sus profetas porque tenía compasión de su pueblo, pero ellos se burlaron de los mensajeros hasta que ya no hubo remedio. Mateo 23:30-35 lleva la advertencia aún más lejos: es posible honrar a los profetas del pasado mientras se rechaza la voz de Dios en el presente. Por eso Jesús denuncia la hipocresía de quienes parecían religiosos, pero se resistían al arrepentimiento. Finalmente, 1 Corintios 10:6-12 explica por qué estos relatos fueron preservados: fueron escritos como ejemplos y advertencias para quienes han llegado al fin del tiempo. La experiencia de Israel nos enseña que no estamos condenados a repetir los errores del pasado si escuchamos, aprendemos y obedecemos. Así, esta semana nos invita a recibir las advertencias de Dios como actos de amor, examinar nuestra propia vida, evitar la incredulidad y mantener una actitud humilde ante la verdad de las Escrituras.</p>
+  </div>
+
+  <div id="explora2" class="sub-contenido">
+    <ul>
+      <li>Según Números 13:26-30 y 14:4-11, ¿cómo puede el temor llevarnos a rechazar el mensaje de Dios?</li>
+      <p class="ejemplo">Ejemplo 1: “Cuando miramos más el problema que la promesa de Dios, podemos comenzar a desconfiar y rebelarnos”.</p>
+      <p class="ejemplo">Ejemplo 2: “El temor puede hacernos culpar al mensajero en lugar de reconocer que el verdadero problema es nuestra falta de fe”.</p>
+
+      <li>¿Qué nos enseña Jeremías 36:20-31 acerca de intentar destruir o ignorar la Palabra de Dios?</li>
+      <p class="ejemplo">Ejemplo 1: “Quemar el rollo no cambió la verdad del mensaje ni impidió que se cumpliera”.</p>
+      <p class="ejemplo">Ejemplo 2: “Rechazar una advertencia no elimina sus consecuencias; más bien puede aumentar el daño de nuestra rebeldía”.</p>
+
+      <li>¿Qué revela 2 Crónicas 36:15-16 acerca de la razón por la que Dios enviaba repetidamente a sus profetas?</li>
+      <p class="ejemplo">Ejemplo 1: “Los enviaba porque tenía compasión de su pueblo y deseaba evitar su destrucción”.</p>
+      <p class="ejemplo">Ejemplo 2: “Las advertencias no eran una señal de falta de amor, sino una oportunidad repetida para arrepentirse”.</p>
+
+      <li>¿Qué hipocresía denuncia Jesús en Mateo 23:30-35?</li>
+      <p class="ejemplo">Ejemplo 1: “Honraban a los profetas del pasado, pero no querían obedecer el mensaje que esos profetas habían enseñado”.</p>
+      <p class="ejemplo">Ejemplo 2: “Decían que nunca habrían rechazado a los mensajeros antiguos, pero estaban rechazando al mismo Mesías”.</p>
+
+      <li>Según 1 Corintios 10:6-12, ¿por qué Dios preservó en la Biblia historias de fracaso y rebelión?</li>
+      <p class="ejemplo">Ejemplo 1: “Para advertirnos y ayudarnos a reconocer conductas que no debemos repetir”.</p>
+      <p class="ejemplo">Ejemplo 2: “Para mostrarnos que podemos aprender del pasado y permanecer firmes si dependemos de Dios”.</p>
+    </ul>
+  </div>
+
+  <div id="aplica" class="contenido">
+    <button class="sub-boton" onclick="mostrarDetalle('aplica1')">🧠 Reflexión personal</button>
+    <button class="sub-boton" onclick="mostrarDetalle('aplica2')">✨ Actividad de compromiso</button>
+    <button class="volver" onclick="volverInicio()">⬅️ Volver</button>
+  </div>
+
+  <div id="aplica1" class="sub-contenido">
+    <p><strong>Reflexión:</strong> ¿Qué actitud necesitas revisar más en tu vida: reaccionar con temor, resistir una corrección, justificar un error, criticar al mensajero o pensar que los errores del pasado nunca podrían repetirse en ti? ¿Qué paso concreto darás?</p>
+    <p class="ejemplo">Ejemplo 1: “Necesito dejar de defender automáticamente mis decisiones y escuchar con más humildad cuando la Biblia me corrige”.</p>
+    <p class="ejemplo">Ejemplo 2: “Debo reconocer que también puedo repetir errores de incredulidad si dejo de depender de Dios”.</p>
+  </div>
+
+  <div id="aplica2" class="sub-contenido">
+    <p><strong>Actividad guiada:</strong><br/>
+      1) El maestro invita a todos a guardar un momento de silencio y pensar en una advertencia bíblica que necesitan tomar más en serio.<br/>
+      2) El maestro invita a cada persona completar una frase breve: “Señor, ayúdame a escuchar cuando…” o “Señor, no quiero repetir el error de…”.<br/>
+      3) El maestro cierra con una oración general pidiendo humildad, fe, arrepentimiento y disposición para obedecer.</p>
+    <p class="ejemplo">Ejemplo 1: “Señor, ayúdame a escuchar cuando tu Palabra corrige algo que no quiero cambiar”.</p>
+    <p class="ejemplo">Ejemplo 2: “Señor, no quiero repetir el error de desconfiar de ti cuando aparecen dificultades”.</p>
+  </div>
+
+  <div id="crea" class="contenido">
+    <button class="sub-boton" onclick="mostrarDetalle('crea1')">📌 Desafío semanal</button>
+    <button class="sub-boton" onclick="mostrarDetalle('crea2')">✍️ Actividad grupal final</button>
+    <button class="volver" onclick="volverInicio()">⬅️ Volver</button>
+  </div>
+
+  <div id="crea1" class="sub-contenido">
+    <p><strong>Desafío:</strong> Durante esta semana, identifica una advertencia bíblica que normalmente pasas por alto. Léela en su contexto, pregúntate qué conducta quiere evitar Dios y decide una acción concreta de obediencia. Luego comparte con alguien una enseñanza del relato que pueda ayudarle a no repetir un error semejante.</p>
+    <p class="ejemplo">Ejemplo 1: “Leeré 1 Corintios 10:6-12 y elegiré una conducta que debo evitar para no repetir la incredulidad de Israel”.</p>
+    <p class="ejemplo">Ejemplo 2: “Compartiré con alguien la historia de Jeremías 36 para recordarle que ignorar una advertencia no hace desaparecer sus consecuencias”.</p>
+  </div>
+
+  <div id="crea2" class="sub-contenido">
+    <p><strong>Actividad grupal:</strong><br/>
+      El maestro invita a cada persona completar una frase breve: “Como grupo queremos escuchar la voz de Dios…”. Luego reúne las ideas principales y todos repiten juntos una declaración final de compromiso.</p>
+    <p class="ejemplo">Ejemplo 1: “Como grupo queremos escuchar la voz de Dios recibiendo sus advertencias con humildad y fe”.</p>
+    <p class="ejemplo">Ejemplo 2: “Como grupo queremos escuchar la voz de Dios aprendiendo de los errores del pasado y obedeciendo su Palabra en el presente”.</p>
+  </div>
+
+  <div class="marca">Educa144k</div>
+
+  <script>
+    function mostrarSeccion(id){ ocultarTodo(); document.getElementById('inicio').style.display='none'; document.getElementById(id).style.display='block'; }
+    function mostrarDetalle(id){ document.querySelectorAll('.sub-contenido').forEach(el => el.style.display='none'); document.getElementById(id).style.display='block'; }
+    function volverInicio(){ ocultarTodo(); document.getElementById('inicio').style.display='block'; }
+    function ocultarTodo(){ document.querySelectorAll('.contenido, .sub-contenido').forEach(el => el.style.display='none'); }
+  </script>
+</body>
+</html>
